@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Sedgwick+Ave+Display&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+           window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+<style>
+#section1 {
+  height: 600px;
+  background-color: pink;
+}
+
+#section2 {
+  height: 600px;
+  background-color: yellow;
+}
+</style>
+</head>
+    <title>Document</title>
+</head>
+<body>
+    <div class="back">
+        <lord-icon
+            src="https://cdn.lordicon.com/osuxyevn.json"
+            trigger="hover"
+            colors="primary:#ffffff"
+            style="width:40px;height:40px">
+        </lord-icon>
+        <div class="title">
+            <h1>Welcome</h1>
+            <p>Hello there, <strong>Ahmed</strong> this my first <br>project I hope you enjoyet</p>
+        </div>
+        <div class="bttn">
+            <ul>
+                <li><a href="#1lvl">start</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="lvl1">
+        <section id="1lvl">
+            <div class="menu">
+                <div class="tab1">
+                    <div class="img1">
+                        <img src="img/tab1w.png" alt="coding">
+
+                    </div>
+                    <h3>Developer Web Begginer</h3>
+                    <div class="ull1">
+                        <ul>
+                            <li><img src="img/right-arrow.png" alt=">">Create good web</li>
+                            <li><img src="img/right-arrow.png" alt=">">around 1-3 days</li>
+                            <li><img src="img/right-arrow.png" alt=">">good quality photo</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab2">
+                    <div class="img2">
+                        <img src="img/tab2w.png" alt="school">
+                    </div>
+                    <h3>high school studen</h3>
+                    <div class="ull2">
+                        <ul>
+                            <li><img src="img/right-arrow.png" alt=">">3rd IT</li>
+                            <li><img src="img/right-arrow.png" alt=">">Tah Hsin</li>
+                            <li><img src="img/right-arrow.png" alt=">">17 years old</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="tab3">
+                    <div class="img3">
+                        <img src="img/tab3w.png" alt="dambel">
+
+                    </div>
+                    <h3>workout on home</h3>
+                    <div class="ull3">
+                        <ul>
+                            <li><img src="img/right-arrow.png" alt=">">1 manth new program</li>
+                            <li><img src="img/right-arrow.png" alt=">">hard work</li>
+                            <li><img src="img/right-arrow.png" alt=">">healthy</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>
